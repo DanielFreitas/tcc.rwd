@@ -1,0 +1,283 @@
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="mdl/material.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <script type="text/javascript" src="mdl/material.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <!--<link rel="stylesheet" href="style.css">-->
+	<title>Material Design Lite</title>
+  <meta charset="utf-8">
+</head>
+
+<style>
+ .demo-card-image.mdl-card {
+    width: 100%;
+    min-width: 200px;
+}
+.mdl-card__media > img{
+  min-height:200px;  
+}
+
+/* Adiciona uma imagem atrás da descrição do Header */
+/*
+.demo-card-image > .mdl-card__actions {
+    height: 52px;
+    padding: 16px;
+    background: rgba(0, 0, 0, 0.2);
+}
+.demo-card-image__filename {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+}
+*/
+
+/* Alinha o header dos vídeos com os vídeos */
+.mdl-card__media {
+    background-color:#fff;
+    margin:0px;
+    padding:0px;
+    overflow:hidden;
+}
+
+/* Atribui cor e tamanho ao header dos vídeos */
+.demo-mdl-youtube{
+    padding: 3px;
+    background-color: #3f51b5;
+}
+.mdl-card__title h6{
+    font-size: 16px;
+    color: #fff;
+}
+
+/* Para deixar as tabs alinhado a esquerda */
+.mdl-tabs__tab-bar  {
+  justify-content: flex-start !important;
+}
+
+/* Para não deixar o Footer fixo */
+.mdl-layout{
+    /*height: auto;*/
+}
+
+/* para as redes sociais */
+.div-redesocial > img {
+    object-fit: cover;
+    width: 80px;
+    height: 30px;
+}
+.mdl-button{
+    padding:0px;
+    line-height:16px;
+    text-transform: capitalize;
+}
+.mdl-card__actions{
+    padding: 3px 0px 0px 3px;
+    text-align:center;
+}
+
+.mdl-card__supporting-text{
+    padding: 0px;
+}
+
+.Media {
+  display: flex;
+  align-items: flex-start;
+}
+
+.Media-figure {
+  margin-right: 1em;
+}
+
+.Media-body {
+  flex: 1;
+}
+
+.header-big-image,.header-large-image,.header-small-image{
+   display: none;
+}
+
+.mr-3 {
+    margin-right: 1rem!important;
+}
+
+h5{
+    margin: 5px 0 5px;
+}
+
+@media (min-width: 0) and (max-width: 479px) {
+   .header-big-image,.header-large-image{
+      display: none;
+   }
+   .header-small-image{
+      display: block;
+   }
+}
+
+@media (min-width: 480px) and (max-width: 1199px) {
+   .header-big-image,.header-small-image{
+      display: none;
+   }
+   .header-large-image{
+      display: block;
+   }
+}
+@media (min-width: 1200px) {
+   .header-large-image,.header-small-image{
+      display: none;
+   }
+   .header-big-image{
+      display: block;
+   }
+}
+
+</style>
+
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+
+  <header class="mdl-layout__header">
+      <div class="mdl-layout__header-row">
+          <span class="mdl-layout__title">Material Design Lite</span>
+          <nav class="mdl-navigation mdl-layout--large-screen-only">
+              <a class="mdl-navigation__link" href="#">Home</a>
+              <a class="mdl-navigation__link" href="#">Componentes</a>     
+          </nav>
+          <div class="mdl-layout-spacer"></div>
+          <div class="mdl-textfield mdl-js-textfield mdl-textfield--expandable mdl-textfield--floating-label mdl-textfield--align-right">
+              <label class="mdl-button mdl-js-button mdl-button--icon" for="fixed-header-drawer-exp">
+                  <i class="material-icons">search</i>
+              </label>
+              <div class="mdl-textfield__expandable-holder">
+                  <input class="mdl-textfield__input" type="text" name="sample" id="fixed-header-drawer-exp">
+              </div>
+          </div>
+      </div>
+  </header>
+
+  <div class="mdl-layout__drawer">
+      <span class="mdl-layout__title">Material Design Lite</span>
+      <nav class="mdl-navigation">
+          <a class="mdl-navigation__link" href="#">Home</a>
+          <a class="mdl-navigation__link" href="#">Componentes</a>      
+      </nav>
+  </div>
+
+  <main class="mdl-layout__content">
+      <div class="mdl-grid mdl-grid--no-spacing">
+          <div class="mdl-cell mdl-cell--12-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
+              <div class="demo-card-image mdl-card">
+                  <div class="mdl-card__media">
+                      <img src="img/header-grande.png" class="header-big-image" width="100%">
+                      <img src="img/header-media.png" class="header-large-image" width="100%">
+                      <img src="img/header-pequena.png" class="header-small-image" width="100%">
+                  </div>
+              </div>
+          </div>
+      </div>
+
+    <div class="mdl-grid">
+        <div class="mdl-layout-spacer"></div>
+        <div class="mdl-card mdl-cell mdl-cell--2-col mdl-cell--4-col-tablet mdl-cell--4-col-phone">
+            <div class="mdl-card__title demo-mdl-youtube">
+                <h6 class="mdl-card__title-text">Bootstrap</h6>
+            </div>
+            <div class="mdl-card__media">
+                <iframe width="300" height="215" src="https://www.youtube.com/embed/auFVttzUoo8?rel=0&showinfo=0" frameborder="0" style="overflow:hidden;width:100%" allowfullscreen></iframe>            
+            </div>
+            <div class="mdl-card__supporting-text">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam accusamus, consectetur.</p>
+            </div>
+        </div>
+
+        <div class="mdl-card mdl-cell mdl-cell--2-col mdl-cell--4-col-tablet mdl-cell--4-col-phone">
+            <div class="mdl-card__title demo-mdl-youtube">
+                <h6 class="mdl-card__title-text">Material Design Lite</h6>
+            </div>
+            <div claszs="mdl-card__media">
+                <iframe width="300" height="215" src="https://www.youtube.com/embed/GxcbC9PlTr4?rel=0&showinfo=0" frameborder="0" style="overflow:hidden;width:100%" allowfullscreen></iframe>            
+            </div>
+            <div class="mdl-card__supporting-text">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam accusamus, consectetur.</p>
+            </div>
+        </div>
+
+        <div class="mdl-card mdl-cell mdl-cell--2-col mdl-cell--4-col-tablet mdl-cell--4-col-phone">
+            <div class="mdl-card__title demo-mdl-youtube">
+                <h6 class="mdl-card__title-text">Responsividade</h6>
+            </div>
+            <div class="mdl-card__media">
+                <iframe width="300" height="215" src="https://www.youtube.com/embed/0V5Z2aWBGNw?rel=0&showinfo=0" frameborder="0" style="overflow:hidden;width:100%" allowfullscreen></iframe>
+            </div>
+            <div class="mdl-card__supporting-text">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam accusamus, consectetur.</p>
+            </div>
+        </div>
+
+        <div class="mdl-card mdl-cell mdl-cell--2-col mdl-cell--4-col-tablet mdl-cell--4-col-phone">
+            <div class="mdl-card__title demo-mdl-youtube">
+                <h6 class="mdl-card__title-text">CSS</h6>
+            </div>
+            <div class="mdl-card__media">
+                <iframe width="300" height="215" src="https://www.youtube.com/embed/4oPvurjpcNw" frameborder="0" style="overflow:hidden;width:100%" allowfullscreen></iframe>
+            </div>
+            <div class="mdl-card__supporting-text">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam accusamus, consectetur.</p>
+            </div>
+        </div>
+
+        <div class="mdl-layout-spacer"></div>
+    </div>
+
+    <div class="mdl-grid">
+      <div class="mdl-layout-spacer"></div>
+      <div class="mdl-cell mdl-cell--stretch mdl-cell--8-col mdl-cell--8-col-tablet mdl-cell--4-col-phone">
+
+        <!-- Define a div element as a Container for Tabs -->
+        <div class="mdl-tabs mdl-js-tabs">
+          <div class="mdl-tabs__tab-bar">
+              <a href="#recentes-panel" class="mdl-tabs__tab is-active">Recentes</a>
+              <a href="#maislidas-panel" class="mdl-tabs__tab">Mais lidas</a>
+          </div>
+          <div class="mdl-tabs__panel is-active" id="recentes-panel">                
+            <article>
+                <div class="media">
+				  <img class="d-flex mr-3" src="img/news.svg" alt="Generic placeholder image">
+				  <div class="media-body">
+					<h5>Recentes</h5>
+					Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+				  </div>
+				</div>
+            </article>
+          </div>
+          <div class="mdl-tabs__panel" id="maislidas-panel">                
+            <article>
+                <div class="media">
+				  <img class="d-flex mr-3" src="img/news.svg" alt="Generic placeholder image">
+				  <div class="media-body">
+					<h5>Mais lidas</h5>
+					Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi vulputate fringilla. Donec lacinia congue felis in faucibus.
+				  </div>
+				</div>
+            </article>
+          </div>
+        </div>
+
+      </div>
+      <div class="mdl-layout-spacer"></div>
+    </div>
+
+  </main>
+
+  <footer class="mdl-mini-footer">
+    <div class="mdl-mini-footer__left-section">
+      <ul class="mdl-mini-footer__link-list">
+	    <li><a href="#">Footer</a></li>
+        <li><a href="#">LINK</a></li>
+        <li><a href="#">LINK</a></li>
+      </ul>
+    </div>
+  </footer>
+
+</div>
+
+ 

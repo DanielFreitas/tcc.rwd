@@ -1,0 +1,15 @@
+.mdl-cell {  
+  background-color: whitesmoke;
+}
+.trailer{
+  background-color: #2F4F4F;
+}
+
+@media (min-width: 480px) and (max-width: 839px) {
+  .trailer-adapter {
+    width: calc(33.3333333333% - 16px);
+  }
+}
+.mdl-grid {
+  padding: 0!important;
+}
